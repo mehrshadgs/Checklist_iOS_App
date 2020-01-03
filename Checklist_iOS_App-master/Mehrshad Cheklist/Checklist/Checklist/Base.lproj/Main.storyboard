@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yR4-7Y-YAo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hau-2p-E4A">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15702"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cheklists-->
+        <!--Check List View Controller-->
         <scene sceneID="S2D-9z-nH0">
             <objects>
                 <tableViewController id="Hau-2p-E4A" customClass="checkListViewController" customModule="Checklist" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,14 +16,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" id="vxk-yz-PLY">
-                                <rect key="frame" x="0.0" y="28" width="768" height="42.5"/>
+                                <rect key="frame" x="0.0" y="28" width="768" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vxk-yz-PLY" id="5Nz-fg-jEJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="724" height="42.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="724" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKw-Wv-rUi">
-                                            <rect key="frame" x="20" y="11" width="696" height="21"/>
+                                            <rect key="frame" x="20" y="11" width="696" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -43,93 +43,8 @@
                             <outlet property="delegate" destination="Hau-2p-E4A" id="0Hn-uZ-0vd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Cheklists" id="CM3-kk-Vv2">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QIR-sj-PXK">
-                            <connections>
-                                <segue destination="V8s-4p-er0" kind="show" id="TLc-vY-xc4"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="963-ax-kt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="365.625" y="-74.4140625"/>
-        </scene>
-        <!--Add Item-->
-        <scene sceneID="SiS-1O-Fe6">
-            <objects>
-                <tableViewController id="V8s-4p-er0" customClass="AddItemTableViewController" customModule="Checklist" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="p2J-gP-Bvi">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <sections>
-                            <tableViewSection id="iDq-A6-jm8">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="xmM-ls-7ih">
-                                        <rect key="frame" x="0.0" y="18" width="768" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xmM-ls-7ih" id="jTs-w4-p9U">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4h-92-j9z">
-                                                    <rect key="frame" x="20" y="4" width="728" height="34.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="i4h-92-j9z" secondAttribute="trailing" constant="20" id="Glk-PF-2lj"/>
-                                                <constraint firstItem="i4h-92-j9z" firstAttribute="leading" secondItem="jTs-w4-p9U" secondAttribute="leading" constant="20" id="NRq-PV-8Ob"/>
-                                                <constraint firstItem="i4h-92-j9z" firstAttribute="top" secondItem="jTs-w4-p9U" secondAttribute="top" constant="4" id="W6H-zF-qD5"/>
-                                                <constraint firstAttribute="bottom" secondItem="i4h-92-j9z" secondAttribute="bottom" constant="5.5" id="X8T-Ph-l7O"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="V8s-4p-er0" id="NcC-yf-J8B"/>
-                            <outlet property="delegate" destination="V8s-4p-er0" id="QE9-7q-mcH"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Add Item" id="TuY-om-E34">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="JHa-aJ-n8e">
-                            <connections>
-                                <action selector="cancel" destination="V8s-4p-er0" id="hNg-Cd-hKO"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="WrH-FD-SmX">
-                            <connections>
-                                <action selector="done" destination="V8s-4p-er0" id="TvU-iV-cOk"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="textField" destination="i4h-92-j9z" id="fpv-6a-txO"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OS3-hd-6ij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1118.75" y="-40.4296875"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="I7j-uA-pfK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yR4-7Y-YAo" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7oi-Vs-g7Y">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Hau-2p-E4A" kind="relationship" relationship="rootViewController" id="HAB-nH-Bl0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rEe-NY-pc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-400" y="-74.4140625"/>
         </scene>
