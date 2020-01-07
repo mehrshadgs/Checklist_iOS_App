@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FAFA17523BCAF53007B6518 /* Checklistitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAFA17423BCAF53007B6518 /* Checklistitem.swift */; };
+		1FAFA17723BCC879007B6518 /* ItemDetailV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAFA17623BCC879007B6518 /* ItemDetailV.swift */; };
+		1FDA8E6023C470FF00067BA5 /* AllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA8E5F23C470FF00067BA5 /* AllListViewController.swift */; };
+		1FDA8E6223C47A5300067BA5 /* Cheklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA8E6123C47A5300067BA5 /* Cheklist.swift */; };
+		1FDA8E6423C484FD00067BA5 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA8E6323C484FD00067BA5 /* ListDetailViewController.swift */; };
 		AD634E6923BB89810017AE23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD634E6823BB89810017AE23 /* AppDelegate.swift */; };
 		AD634E6B23BB89810017AE23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD634E6A23BB89810017AE23 /* SceneDelegate.swift */; };
 		AD634E6D23BB89810017AE23 /* checklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD634E6C23BB89810017AE23 /* checklistViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FAFA17423BCAF53007B6518 /* Checklistitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklistitem.swift; sourceTree = "<group>"; };
+		1FAFA17623BCC879007B6518 /* ItemDetailV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailV.swift; sourceTree = "<group>"; };
+		1FDA8E5F23C470FF00067BA5 /* AllListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListViewController.swift; sourceTree = "<group>"; };
+		1FDA8E6123C47A5300067BA5 /* Cheklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheklist.swift; sourceTree = "<group>"; };
+		1FDA8E6323C484FD00067BA5 /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		AD634E6523BB89810017AE23 /* Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD634E6823BB89810017AE23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD634E6A23BB89810017AE23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +73,11 @@
 				AD634E7123BB89830017AE23 /* Assets.xcassets */,
 				AD634E7323BB89830017AE23 /* LaunchScreen.storyboard */,
 				AD634E7623BB89830017AE23 /* Info.plist */,
+				1FAFA17423BCAF53007B6518 /* Checklistitem.swift */,
+				1FAFA17623BCC879007B6518 /* ItemDetailV.swift */,
+				1FDA8E5F23C470FF00067BA5 /* AllListViewController.swift */,
+				1FDA8E6123C47A5300067BA5 /* Cheklist.swift */,
+				1FDA8E6323C484FD00067BA5 /* ListDetailViewController.swift */,
 			);
 			path = Checklist;
 			sourceTree = "<group>";
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FDA8E6023C470FF00067BA5 /* AllListViewController.swift in Sources */,
 				AD634E6D23BB89810017AE23 /* checklistViewController.swift in Sources */,
+				1FAFA17723BCC879007B6518 /* ItemDetailV.swift in Sources */,
 				AD634E6923BB89810017AE23 /* AppDelegate.swift in Sources */,
 				AD634E6B23BB89810017AE23 /* SceneDelegate.swift in Sources */,
+				1FDA8E6223C47A5300067BA5 /* Cheklist.swift in Sources */,
+				1FAFA17523BCAF53007B6518 /* Checklistitem.swift in Sources */,
+				1FDA8E6423C484FD00067BA5 /* ListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
