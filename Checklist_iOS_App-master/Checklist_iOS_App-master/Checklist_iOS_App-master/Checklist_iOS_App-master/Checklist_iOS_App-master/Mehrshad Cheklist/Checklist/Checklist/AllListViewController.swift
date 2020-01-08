@@ -48,6 +48,13 @@ class AllListViewController: UITableViewController,ListDetailViewControllerDeleg
         
         list = Cheklist(name : "To Do")
         lists.append(list)
+        for list in lists{
+            let item = ChecklistItem()
+            item.text = "Item for\(list.name)"
+            list.items.append(item)
+        }
+        
+        
         
         tableView.register(UITableViewCell.self , forCellReuseIdentifier: cellIdentifier)
     }
@@ -86,6 +93,6 @@ class AllListViewController: UITableViewController,ListDetailViewControllerDeleg
         controller.delegate = self
         let cheklist = lists[indexPath.row]
         controller.checklistToEdit = cheklist
-        navigationController?.popViewController(animated: true)
+        navigationController?.pushViewController(controller,animated: true)
     }
 }
